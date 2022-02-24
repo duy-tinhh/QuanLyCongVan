@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<ConnectString>
+  <String>
+    <Connect>6BxublrT770f3v/z/5WsU0aRGPufviFO9uuCzGkgMaoE/ixwkQJ2AcHMsyID/E5tU2eLg1a54Narq+SNiGL5mDtbaCoKWFzYTJ09/7RsVXzVlyPxJYeIvn0hDD7CxLYv/B17M69hijg=</Connect>
+    <Server>DESKTOP-IKM3EV1\MSSQLSERVER01</Server>
+    <DataSource>QuanLyCongVan</DataSource>
+    <Folder>D:\</Folder>
+  </String>
+</ConnectString>

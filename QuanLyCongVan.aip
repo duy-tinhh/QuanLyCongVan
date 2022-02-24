@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.5" version="18.5" Modules="enterprise" RootPath="." Language="en" Id="{7833ACC0-C157-4785-ADB6-EE278984C5BB}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2021" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="Manufacturer" Value="QuanLyCongVan"/>
+    <ROW Property="ProductCode" Value="1033:{4E4D4CD2-369B-465D-9C55-F1EEA4C9DCA1} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="QuanLyCongVan"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{5EB2412F-7DE0-4EE7-AFF0-79BE51586EDF}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="AnyCPU_Debug:Windows 9x/ME#AnyCPU_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="AnyCPU_Debug:Windows 9x/ME#AnyCPU_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="AnyCPU_Debug:Windows NT 4.0#AnyCPU_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="AnyCPU_Debug:Windows NT 4.0#AnyCPU_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="AnyCPU_Debug:Windows 2000#AnyCPU_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="AnyCPU_Debug:Windows 2000#AnyCPU_Release:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="AnyCPU_Debug:Windows XP/2003#AnyCPU_Release:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="AnyCPU_Debug:Windows XP/2003#AnyCPU_Release:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{47F6FFBD-B11B-45EF-94AA-6819AA8B07FB}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="DevExpress.BonusSkins.v14.2.dll" ComponentId="{BDEF0614-8183-4796-868F-BF275A5468A5}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.BonusSkins.v14.2.dll"/>
+    <ROW Component="DevExpress.Charts.v14.2.Core.dll" ComponentId="{3A39E847-2776-4B9E-9572-D8456604884F}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Charts.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.CodeParser.v14.2.dll" ComponentId="{DD2CC9F8-2088-427D-B1E1-3834B53A6BC3}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.CodeParser.v14.2.dll"/>
+    <ROW Component="DevExpress.Data.v14.2.dll" ComponentId="{09A76DA1-C22B-40EA-B63E-4993BF23E0DE}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Data.v14.2.dll"/>
+    <ROW Component="DevExpress.DataAccess.v14.2.UI.dll" ComponentId="{3257EE23-211F-49D6-B58C-73DBF417897B}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.DataAccess.v14.2.UI.dll"/>
+    <ROW Component="DevExpress.DataAccess.v14.2.dll" ComponentId="{AB4691C0-4954-4A97-A9C0-1C891355B546}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.DataAccess.v14.2.dll"/>
+    <ROW Component="DevExpress.ExpressApp.Win.v14.2.dll" ComponentId="{ADB964D7-8578-4754-AF0F-2D805FA1F735}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.ExpressApp.Win.v14.2.dll"/>
+    <ROW Component="DevExpress.ExpressApp.Xpo.v14.2.dll" ComponentId="{94986CE4-DEE3-4E1F-8697-88C2ED7B250C}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.ExpressApp.Xpo.v14.2.dll"/>
+    <ROW Component="DevExpress.ExpressApp.v14.2.dll" ComponentId="{39249509-6E34-4262-8F0D-5338CED97A39}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.ExpressApp.v14.2.dll"/>
+    <ROW Component="DevExpress.Office.v14.2.Core.dll" ComponentId="{EF1BD838-6EBF-4638-8BE4-D726C579E5C1}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Office.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.Persistent.Base.v14.2.dll" ComponentId="{DE454DAC-22C1-4621-BC44-58F4700846A5}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Persistent.Base.v14.2.dll"/>
+    <ROW Component="DevExpress.PivotGrid.v14.2.Core.dll" ComponentId="{23069DE9-C98F-4FDD-8D16-88AF67990ABE}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.PivotGrid.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.Printing.v14.2.Core.dll" ComponentId="{ADDC730B-573C-4221-8920-46CEC7B5D3A1}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Printing.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.RichEdit.v14.2.Core.dll" ComponentId="{5DBDCED8-41BA-40AD-9816-D41B03D5E077}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.RichEdit.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.Sparkline.v14.2.Core.dll" ComponentId="{B5B24F24-9088-436B-AC02-50ADD1BC860A}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Sparkline.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.Spreadsheet.v14.2.Core.dll" ComponentId="{A30250A5-C931-4964-A5BF-1C5443EC0B29}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Spreadsheet.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.Utils.v14.2.UI.dll" ComponentId="{51F3DD2D-B979-4D9B-A17B-7D205D688AB4}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Utils.v14.2.UI.dll"/>
+    <ROW Component="DevExpress.Utils.v14.2.dll" ComponentId="{0798B6DF-C8FE-4BC3-A0EF-E3197AC3F247}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Utils.v14.2.dll"/>
+    <ROW Component="DevExpress.Xpo.v14.2.dll" ComponentId="{52C803D5-E5C7-4666-99A4-83779D8BD11F}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.Xpo.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraBars.v14.2.dll" ComponentId="{8688D1FE-07D0-4907-B513-E8AA5BFD34A6}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraBars.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraCharts.v14.2.Extensions.dll" ComponentId="{FAC87A63-7C68-47F2-9A6C-39F73AE91982}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraCharts.v14.2.Extensions.dll"/>
+    <ROW Component="DevExpress.XtraCharts.v14.2.UI.dll" ComponentId="{156CDCAC-9EF6-4701-9AB5-005D443734E7}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraCharts.v14.2.UI.dll"/>
+    <ROW Component="DevExpress.XtraCharts.v14.2.Wizard.dll" ComponentId="{7BE47AE5-E7E1-47CC-9582-3A39981463B5}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraCharts.v14.2.Wizard.dll"/>
+    <ROW Component="DevExpress.XtraCharts.v14.2.dll" ComponentId="{311E0590-8B1F-45DF-B7C1-6B8213F0B6C9}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraCharts.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraEditors.v14.2.dll" ComponentId="{8D9E08E1-7E0E-49A7-96AB-205D32E17C86}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraEditors.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraGauges.v14.2.Core.dll" ComponentId="{43CCDF95-5C86-42BC-B4F1-FB315A8FFC29}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraGauges.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.XtraGauges.v14.2.Win.dll" ComponentId="{7A70A14A-DE2E-4CB7-9A0A-7297EBACD6AA}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraGauges.v14.2.Win.dll"/>
+    <ROW Component="DevExpress.XtraGrid.v14.2.dll" ComponentId="{1DB2F504-646D-4D47-A696-ABC0C2A16B01}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraGrid.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraLayout.v14.2.dll" ComponentId="{E1EB12C7-04DD-4986-B7C9-C9B62D079A67}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraLayout.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraNavBar.v14.2.dll" ComponentId="{AF8FF381-22DF-4EE5-AC07-B83DBBA09ACE}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraNavBar.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraPivotGrid.v14.2.dll" ComponentId="{870CE79F-E7AB-481E-B70C-16C88FC628F9}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraPivotGrid.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraPrinting.v14.2.dll" ComponentId="{2ABFE24B-D629-45FB-B210-7A67698A3427}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraPrinting.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraReports.v14.2.Extensions.dll" ComponentId="{71662F3B-48D0-4041-8A90-4269D9184504}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraReports.v14.2.Extensions.dll"/>
+    <ROW Component="DevExpress.XtraReports.v14.2.dll" ComponentId="{B621AC6E-D854-4378-A221-6303D2A0548B}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraReports.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraRichEdit.v14.2.Extensions.dll" ComponentId="{CEFCEF7C-C4BE-4286-916F-21DCF37FAB13}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v14.2.Extensions.dll"/>
+    <ROW Component="DevExpress.XtraRichEdit.v14.2.dll" ComponentId="{D6C56F1F-F80C-4B94-9AE5-F13B40C37C12}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraRichEdit.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraScheduler.v14.2.Core.dll" ComponentId="{378A30DA-D910-48B2-B616-7EA7EF8FC7AF}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraScheduler.v14.2.Core.dll"/>
+    <ROW Component="DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll" ComponentId="{8F81CB15-DD60-4F5F-BB23-A240225A5526}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll"/>
+    <ROW Component="DevExpress.XtraScheduler.v14.2.Reporting.dll" ComponentId="{FE0193A6-34B8-449A-BEC6-5488177FD4DD}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraScheduler.v14.2.Reporting.dll"/>
+    <ROW Component="DevExpress.XtraScheduler.v14.2.dll" ComponentId="{6C0642DD-314B-4157-8BB2-3B79D0F8880F}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraScheduler.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraSpreadsheet.v14.2.dll" ComponentId="{610E2089-E90E-40FD-9BC8-705CA2543B16}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraSpreadsheet.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraTreeList.v14.2.dll" ComponentId="{B84BE515-F72D-436A-B5BF-1DF86FA458BD}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraTreeList.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraVerticalGrid.v14.2.dll" ComponentId="{9D272F0B-BC0A-499D-85D1-EFDF2E96206D}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraVerticalGrid.v14.2.dll"/>
+    <ROW Component="DevExpress.XtraWizard.v14.2.dll" ComponentId="{872C89C5-C720-4620-A2D2-BABA56723F24}" Directory_="APPDIR" Attributes="0" KeyPath="DevExpress.XtraWizard.v14.2.dll"/>
+    <ROW Component="Interop.ACTIVEXLib.dll" ComponentId="{C1276349-9496-4340-A769-E0D7FD8D6435}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.ACTIVEXLib.dll"/>
+    <ROW Component="Interop.ADODB.dll" ComponentId="{45272EDC-6679-4941-9349-EA8492A7A51D}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.ADODB.dll"/>
+    <ROW Component="Interop.ADOX.dll" ComponentId="{4C616077-A2D9-4FC7-A05B-6716EC39CEC6}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.ADOX.dll"/>
+    <ROW Component="Interop.IWshRuntimeLibrary.dll" ComponentId="{A814FCCF-927F-47A5-AE5F-9229A1EB0BB4}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.IWshRuntimeLibrary.dll"/>
+    <ROW Component="Interop.InteropExtensionLib.dll" ComponentId="{2FC5025B-7BA4-44AC-9408-5D728DD9F0D8}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.InteropExtensionLib.dll"/>
+    <ROW Component="Interop.InteropGUILib.dll" ComponentId="{5FF76919-BE52-4267-9D67-A4CDFEF6EAC9}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.InteropGUILib.dll"/>
+    <ROW Component="Interop.NetFwTypeLib.dll" ComponentId="{2B31A74B-E298-4757-BECE-37DF9EA155E2}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.NetFwTypeLib.dll"/>
+    <ROW Component="Interop.Office2013CustomActionsLib.dll" ComponentId="{35E9DBFA-ED25-4888-B297-BFD1A9F0730B}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.Office2013CustomActionsLib.dll"/>
+    <ROW Component="Interop.UCAddinLib.dll" ComponentId="{CDE08CB6-3401-4574-B907-A8EDB51DCAC9}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.UCAddinLib.dll"/>
+    <ROW Component="Interop.VSTOEE100.dll" ComponentId="{C48A4AFA-B8EF-491B-BBAC-090F692EF727}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.VSTOEE100.dll"/>
+    <ROW Component="Interop.VSTOEE90.dll" ComponentId="{1DFA94F8-153F-4DEC-AB75-905984F0F610}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.VSTOEE90.dll"/>
+    <ROW Component="Microsoft.Build.Framework.dll" ComponentId="{359A8F2A-4AB8-400C-97AC-69E5759B3521}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Build.Framework.dll"/>
+    <ROW Component="Microsoft.CSharp.dll" ComponentId="{D15D2EAC-4D2B-4AAD-8EF7-C8F22D55B1A8}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.CSharp.dll"/>
+    <ROW Component="Microsoft.Office.Interop.Access.dll" ComponentId="{30CD84EE-9D87-4455-8D85-D78F86764F52}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Office.Interop.Access.dll"/>
+    <ROW Component="Microsoft.Office.interop.access.dao.dll" ComponentId="{BAF97C4A-52FE-4F3E-A0B9-F99A86ACFEC6}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.Office.interop.access.dao.dll"/>
+    <ROW Component="Microsoft.SqlServer.ConnectionInfo.dll" ComponentId="{84D27A63-D97D-4945-B2ED-21EC152208EA}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.ConnectionInfo.dll"/>
+    <ROW Component="Microsoft.SqlServer.DTSPipelineWrap.dll" ComponentId="{8B252F27-D3FC-405B-82DE-769CD0048E86}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.DTSPipelineWrap.dll"/>
+    <ROW Component="Microsoft.SqlServer.DTSRuntimeWrap.dll" ComponentId="{ED05DDF8-FD46-444B-B91A-C0173FE21C4D}" Directory_="APPDIR" Attributes="256" KeyPath="Microsoft.SqlServer.DTSRuntimeWrap.dll"/>
+    <ROW Component="Microsoft.SqlServer.Diagnostics.STrace.dll" ComponentId="{7C093259-39D6-4ADF-8542-2B07F8CB1D44}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.Diagnostics.STrace.dll"/>
+    <ROW Component="Microsoft.SqlServer.Dmf.Common.dll" ComponentId="{65FF4F60-12E6-48D3-A19A-1362A2670825}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.Dmf.Common.dll"/>
+    <ROW Component="Microsoft.SqlServer.DtsMsg.dll" ComponentId="{59AA799A-220C-42BC-8DB5-8730D57C9806}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.DtsMsg.dll"/>
+    <ROW Component="Microsoft.SqlServer.ManagedConnections.dll" ComponentId="{A18D8BFD-340E-42D2-9714-B424BE6244A9}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.ManagedConnections.dll"/>
+    <ROW Component="Microsoft.SqlServer.ManagedDTS.dll" ComponentId="{4A6A0553-F57B-4CC7-8B30-2749BF80A2D9}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.ManagedDTS.dll"/>
+    <ROW Component="Microsoft.SqlServer.Management.Sdk.Sfc.dll" ComponentId="{50AAF316-08C2-49C3-AE51-328BF1C9118B}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.Management.Sdk.Sfc.dll"/>
+    <ROW Component="Microsoft.SqlServer.Msxml6_interop.dll" ComponentId="{F577A113-75DC-4261-AD5C-5BF3E66B811B}" Directory_="APPDIR" Attributes="256" KeyPath="Microsoft.SqlServer.Msxml6_interop.dll"/>
+    <ROW Component="Microsoft.SqlServer.PipelineHost.dll" ComponentId="{D5A07685-7BF6-462A-B287-09E334E17D42}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.PipelineHost.dll"/>
+    <ROW Component="Microsoft.SqlServer.ServiceBrokerEnum.dll" ComponentId="{2CF691FB-AF90-4926-BDDE-B9414412A600}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.ServiceBrokerEnum.dll"/>
+    <ROW Component="Microsoft.SqlServer.Smo.dll" ComponentId="{E3C5D417-DAAB-4470-8C8B-3A3707E5806D}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.Smo.dll"/>
+    <ROW Component="Microsoft.SqlServer.SqlClrProvider.dll" ComponentId="{FC1A08B0-B627-406C-9DF8-51233E10B84D}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.SqlClrProvider.dll"/>
+    <ROW Component="Microsoft.SqlServer.SqlEnum.dll" ComponentId="{3CDF6A6C-1836-4791-B67E-BF5C35C79C10}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.SqlEnum.dll"/>
+    <ROW Component="Microsoft.SqlServer.SqlTDiagM.dll" ComponentId="{FCC13317-EFC0-4411-A83B-D07BB4B34B02}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.SqlServer.SqlTDiagM.dll"/>
+    <ROW Component="Microsoft.VisualBasic.dll" ComponentId="{45A83F96-1D6A-4313-9BB3-542BBE5B6A2C}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.VisualBasic.dll"/>
+    <ROW Component="Office.dll" ComponentId="{C0968FC9-75F2-461A-866B-D9F913011442}" Directory_="APPDIR" Attributes="0" KeyPath="Office.dll"/>
+    <ROW Component="PresentationCore.dll" ComponentId="{76095EB5-5D0F-4157-83FD-F25A7D8386E1}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationCore.dll"/>
+    <ROW Component="PresentationFramework.dll" ComponentId="{2F304375-5100-4927-B451-2CFFC527F623}" Directory_="APPDIR" Attributes="0" KeyPath="PresentationFramework.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{F5A56ADB-AB34-417E-95BB-2A5E3A61F13E}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="QuanLyCongVan.exe" ComponentId="{F379FC2D-8298-44D5-9CEB-9EE5DB1771DE}" Directory_="APPDIR" Attributes="0" KeyPath="QuanLyCongVan.exe"/>
+    <ROW Component="QuanLyCongVan.exe.config" ComponentId="{2A23A9B6-9527-4A57-92CB-A56EE7A0888D}" Directory_="APPDIR" Attributes="0" KeyPath="QuanLyCongVan.exe.config" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{0267EA54-1D44-4530-8339-0063F2AA9E39}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="System.ComponentModel.DataAnnotations.dll" ComponentId="{4734E4CE-C23C-42F5-9A01-FA67BD822996}" Directory_="APPDIR" Attributes="0" KeyPath="System.ComponentModel.DataAnnotations.dll"/>
+    <ROW Component="System.Configuration.dll" ComponentId="{6BC2D920-9C84-4745-877C-9C61B5EA0072}" Directory_="APPDIR" Attributes="0" KeyPath="System.Configuration.dll"/>
+    <ROW Component="System.Core.dll" ComponentId="{18A147F1-85B4-4A1A-A45F-754DC6D03EC7}" Directory_="APPDIR" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{5E81CCFC-1756-46A2-AC80-967AE7DCF3C0}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.Entity.dll" ComponentId="{55E89CA0-46E0-41B1-833C-16C2560B10BB}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.Entity.dll"/>
+    <ROW Component="System.Data.Linq.dll" ComponentId="{A791EF75-4D11-4BA6-AF96-DC16DB066F98}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.Linq.dll"/>
+    <ROW Component="System.Data.OracleClient.dll" ComponentId="{B1A5234F-FA2A-4807-9583-42C288C93F17}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.OracleClient.dll"/>
+    <ROW Component="System.Data.Services.Client.dll" ComponentId="{65CDBF2F-56D8-4FCC-A185-304274936177}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.Services.Client.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{19CFDFB7-6305-4A76-A5B6-F6056EFD6BE5}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Deployment.dll" ComponentId="{F195F976-B352-4640-A308-97C7296D49A9}" Directory_="APPDIR" Attributes="0" KeyPath="System.Deployment.dll"/>
+    <ROW Component="System.Design.dll" ComponentId="{A30A40D3-E8F3-45C0-A7F0-A33F90733382}" Directory_="APPDIR" Attributes="0" KeyPath="System.Design.dll"/>
+    <ROW Component="System.Drawing.Design.dll" ComponentId="{B214D6E5-990B-432A-AE73-06836054EC9E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.Design.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{FD670AE2-412E-4B8E-91CC-35CDACC1F57E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Management.dll" ComponentId="{09C394C1-F85F-4EC3-90F3-787E529AB5FF}" Directory_="APPDIR" Attributes="0" KeyPath="System.Management.dll"/>
+    <ROW Component="System.Messaging.dll" ComponentId="{CE33BD86-F9AC-43A8-B41D-F718F5F9EA08}" Directory_="APPDIR" Attributes="0" KeyPath="System.Messaging.dll"/>
+    <ROW Component="System.Numerics.dll" ComponentId="{AEAA4A7B-66CC-4AA7-86F5-FB2FE780BEC5}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.dll"/>
+    <ROW Component="System.Printing.dll" ComponentId="{B60F3E29-A565-4D87-95BE-BE2CE1595531}" Directory_="APPDIR" Attributes="0" KeyPath="System.Printing.dll"/>
+    <ROW Component="System.Runtime.Remoting.dll" ComponentId="{090E76FA-C847-4790-9C26-C57529B4D814}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.Remoting.dll"/>
+    <ROW Component="System.Runtime.Serialization.Formatters.Soap.dll" ComponentId="{5AC28D7B-560C-417D-B276-D7F63456B984}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.Serialization.Formatters.Soap.dll"/>
+    <ROW Component="System.Runtime.Serialization.dll" ComponentId="{853AB153-AB1F-4F6C-996F-2B456EC75E98}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.Serialization.dll"/>
+    <ROW Component="System.Security.dll" ComponentId="{2D579B27-EDF3-4A5C-BAD4-2FA0D3C18935}" Directory_="APPDIR" Attributes="0" KeyPath="System.Security.dll"/>
+    <ROW Component="System.ServiceModel.Web.dll" ComponentId="{A204A384-068E-416A-8095-3331EB3F668B}" Directory_="APPDIR" Attributes="0" KeyPath="System.ServiceModel.Web.dll"/>
+    <ROW Component="System.ServiceModel.dll" ComponentId="{A5EEF9C8-FA5F-4631-9550-210E7B6926AD}" Directory_="APPDIR" Attributes="0" KeyPath="System.ServiceModel.dll"/>
+    <ROW Component="System.Transactions.dll" ComponentId="{7BF3B114-EE37-4A67-ABED-07415C5D8639}" Directory_="APPDIR" Attributes="0" KeyPath="System.Transactions.dll"/>
+    <ROW Component="System.Web.Services.dll" ComponentId="{D5A501D1-35BF-4E9B-A6C7-A0D20CC7994E}" Directory_="APPDIR" Attributes="0" KeyPath="System.Web.Services.dll"/>
+    <ROW Component="System.Windows.Forms.dll" ComponentId="{61620108-8964-4567-B5E3-8A800A88DF82}" Directory_="APPDIR" Attributes="0" KeyPath="System.Windows.Forms.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{2537C21E-E231-408F-AC74-E45368F9E867}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{1A0B0ED3-53EF-4523-86BE-B6F7F24ACCC0}" Directory_="APPDIR" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{2E1EC562-94C2-4FCA-9A16-D4C902B08B61}" Directory_="APPDIR" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="UIAutomationClient.dll" ComponentId="{009D1B16-E437-4BD4-B731-B988709BD93B}" Directory_="APPDIR" Attributes="0" KeyPath="UIAutomationClient.dll"/>
+    <ROW Component="WindowsBase.dll" ComponentId="{E7D0A412-4905-4E58-B911-F3E06053D100}" Directory_="APPDIR" Attributes="0" KeyPath="WindowsBase.dll"/>
+    <ROW Component="icsharpcode.sharpziplib.dll" ComponentId="{99A6371F-C7AB-48DC-A77A-7133EFE001F4}" Directory_="APPDIR" Attributes="0" KeyPath="icsharpcode.sharpziplib.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{0ECE178F-798B-40E4-B797-25D2DCD6BA24}" Directory_="APPDIR" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="stdole.dll" ComponentId="{DF300015-B46C-4E04-9768-B9424BB652CF}" Directory_="APPDIR" Attributes="0" KeyPath="stdole.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="DevExpress.DataAccess.v14.2.UI.dll" Component_="DevExpress.DataAccess.v14.2.UI.dll" FileName="DEVEXP~1.DLL|DevExpress.DataAccess.v14.2.UI.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.DataAccess.v14.2.UI.dll" SelfReg="false"/>
+    <ROW File="QuanLyCongVan.exe" Component_="QuanLyCongVan.exe" FileName="QUANLY~1.EXE|QuanLyCongVan.exe" Attributes="0" SourcePath="QuanLyCongVan\bin\Release\QuanLyCongVan.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="QuanLyCongVan.exe.config" Component_="QuanLyCongVan.exe.config" FileName="QUANLY~1.CON|QuanLyCongVan.exe.config" Attributes="0" SourcePath="QuanLyCongVan\bin\Release\QuanLyCongVan.exe.config" SelfReg="false"/>
+    <ROW File="DevExpress.CodeParser.v14.2.dll" Component_="DevExpress.CodeParser.v14.2.dll" FileName="DEVEXP~2.DLL|DevExpress.CodeParser.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.CodeParser.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Charts.v14.2.Core.dll" Component_="DevExpress.Charts.v14.2.Core.dll" FileName="DEVEXP~3.DLL|DevExpress.Charts.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Charts.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.BonusSkins.v14.2.dll" Component_="DevExpress.BonusSkins.v14.2.dll" FileName="DEVEXP~4.DLL|DevExpress.BonusSkins.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.BonusSkins.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Data.v14.2.dll" Component_="DevExpress.Data.v14.2.dll" FileName="DEVEXP~5.DLL|DevExpress.Data.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Data.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll" Component_="DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll" FileName="DEVEXP~6.DLL|DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraCharts.v14.2.Extensions.dll" Component_="DevExpress.XtraCharts.v14.2.Extensions.dll" FileName="DEVEXP~7.DLL|DevExpress.XtraCharts.v14.2.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraCharts.v14.2.Extensions.dll" SelfReg="false"/>
+    <ROW File="DevExpress.DataAccess.v14.2.dll" Component_="DevExpress.DataAccess.v14.2.dll" FileName="DEVEXP~8.DLL|DevExpress.DataAccess.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.DataAccess.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.ExpressApp.v14.2.dll" Component_="DevExpress.ExpressApp.v14.2.dll" FileName="DEVEXP~9.DLL|DevExpress.ExpressApp.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.ExpressApp.v14.2.dll" SelfReg="false"/>
+    <ROW File="System.Data.DataSetExtensions.dll" Component_="System.Data.DataSetExtensions.dll" FileName="SYSTEM~1.DLL|System.Data.DataSetExtensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.DataSetExtensions.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraVerticalGrid.v14.2.dll" Component_="DevExpress.XtraVerticalGrid.v14.2.dll" FileName="DEVEX~10.DLL|DevExpress.XtraVerticalGrid.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraVerticalGrid.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.ExpressApp.Win.v14.2.dll" Component_="DevExpress.ExpressApp.Win.v14.2.dll" FileName="DEVEX~11.DLL|DevExpress.ExpressApp.Win.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.ExpressApp.Win.v14.2.dll" SelfReg="false"/>
+    <ROW File="icsharpcode.sharpziplib.dll" Component_="icsharpcode.sharpziplib.dll" FileName="ICSHAR~1.DLL|icsharpcode.sharpziplib.dll" Attributes="0" SourcePath="QuanLyCongVan\bin\Debug\icsharpcode.sharpziplib.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Office.v14.2.Core.dll" Component_="DevExpress.Office.v14.2.Core.dll" FileName="DEVEX~12.DLL|DevExpress.Office.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Office.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraPrinting.v14.2.dll" Component_="DevExpress.XtraPrinting.v14.2.dll" FileName="DEVEX~13.DLL|DevExpress.XtraPrinting.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPrinting.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Persistent.Base.v14.2.dll" Component_="DevExpress.Persistent.Base.v14.2.dll" FileName="DEVEX~14.DLL|DevExpress.Persistent.Base.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Persistent.Base.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraSpreadsheet.v14.2.dll" Component_="DevExpress.XtraSpreadsheet.v14.2.dll" FileName="DEVEX~15.DLL|DevExpress.XtraSpreadsheet.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraSpreadsheet.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.PivotGrid.v14.2.Core.dll" Component_="DevExpress.PivotGrid.v14.2.Core.dll" FileName="DEVEX~16.DLL|DevExpress.PivotGrid.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.PivotGrid.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Printing.v14.2.Core.dll" Component_="DevExpress.Printing.v14.2.Core.dll" FileName="DEVEX~17.DLL|DevExpress.Printing.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Printing.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.RichEdit.v14.2.Core.dll" Component_="DevExpress.RichEdit.v14.2.Core.dll" FileName="DEVEX~18.DLL|DevExpress.RichEdit.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.RichEdit.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="System.Core.dll" Component_="System.Core.dll" FileName="SYSTEM~2.DLL|System.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Core.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.SqlEnum.dll" Component_="Microsoft.SqlServer.SqlEnum.dll" FileName="MICROS~1.DLL|Microsoft.SqlServer.SqlEnum.dll" Attributes="0" SourcePath="C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Sparkline.v14.2.Core.dll" Component_="DevExpress.Sparkline.v14.2.Core.dll" FileName="DEVEX~19.DLL|DevExpress.Sparkline.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Sparkline.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraRichEdit.v14.2.dll" Component_="DevExpress.XtraRichEdit.v14.2.dll" FileName="DEVEX~20.DLL|DevExpress.XtraRichEdit.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraRichEdit.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Spreadsheet.v14.2.Core.dll" Component_="DevExpress.Spreadsheet.v14.2.Core.dll" FileName="DEVEX~21.DLL|DevExpress.Spreadsheet.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Spreadsheet.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Xpo.v14.2.dll" Component_="DevExpress.Xpo.v14.2.dll" FileName="DEVEX~22.DLL|DevExpress.Xpo.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Xpo.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Utils.v14.2.dll" Component_="DevExpress.Utils.v14.2.dll" FileName="DEVEX~23.DLL|DevExpress.Utils.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Utils.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.Utils.v14.2.UI.dll" Component_="DevExpress.Utils.v14.2.UI.dll" FileName="DEVEX~24.DLL|DevExpress.Utils.v14.2.UI.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.Utils.v14.2.UI.dll" SelfReg="false"/>
+    <ROW File="Interop.ADOX.dll" Component_="Interop.ADOX.dll" FileName="INTERO~1.DLL|Interop.ADOX.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.ADOX.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraBars.v14.2.dll" Component_="DevExpress.XtraBars.v14.2.dll" FileName="DEVEX~25.DLL|DevExpress.XtraBars.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraBars.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraScheduler.v14.2.dll" Component_="DevExpress.XtraScheduler.v14.2.dll" FileName="DEVEX~26.DLL|DevExpress.XtraScheduler.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraScheduler.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraCharts.v14.2.dll" Component_="DevExpress.XtraCharts.v14.2.dll" FileName="DEVEX~27.DLL|DevExpress.XtraCharts.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraCharts.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraCharts.v14.2.UI.dll" Component_="DevExpress.XtraCharts.v14.2.UI.dll" FileName="DEVEX~28.DLL|DevExpress.XtraCharts.v14.2.UI.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraCharts.v14.2.UI.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraCharts.v14.2.Wizard.dll" Component_="DevExpress.XtraCharts.v14.2.Wizard.dll" FileName="DEVEX~29.DLL|DevExpress.XtraCharts.v14.2.Wizard.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraCharts.v14.2.Wizard.dll" SelfReg="false"/>
+    <ROW File="Interop.NetFwTypeLib.dll" Component_="Interop.NetFwTypeLib.dll" FileName="INTERO~2.DLL|Interop.NetFwTypeLib.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.NetFwTypeLib.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraEditors.v14.2.dll" Component_="DevExpress.XtraEditors.v14.2.dll" FileName="DEVEX~30.DLL|DevExpress.XtraEditors.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraEditors.v14.2.dll" SelfReg="false"/>
+    <ROW File="System.dll" Component_="System.dll" FileName="System.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" SelfReg="false"/>
+    <ROW File="QuanLyCongVan.pdb" Component_="QuanLyCongVan.exe" FileName="QUANLY~1.PDB|QuanLyCongVan.pdb" Attributes="0" SourcePath="QuanLyCongVan\bin\Debug\QuanLyCongVan.pdb" SelfReg="false"/>
+    <ROW File="Microsoft.Office.interop.access.dao.dll" Component_="Microsoft.Office.interop.access.dao.dll" FileName="MICROS~2.DLL|Microsoft.Office.interop.access.dao.dll" Attributes="0" SourcePath="C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Access.Dao\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Access.Dao.dll" SelfReg="false"/>
+    <ROW File="Interop.VSTOEE90.dll" Component_="Interop.VSTOEE90.dll" FileName="INTERO~3.DLL|Interop.VSTOEE90.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.VSTOEE90.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraGauges.v14.2.Core.dll" Component_="DevExpress.XtraGauges.v14.2.Core.dll" FileName="DEVEX~31.DLL|DevExpress.XtraGauges.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraGauges.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraGauges.v14.2.Win.dll" Component_="DevExpress.XtraGauges.v14.2.Win.dll" FileName="DEVEX~32.DLL|DevExpress.XtraGauges.v14.2.Win.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraGauges.v14.2.Win.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraGrid.v14.2.dll" Component_="DevExpress.XtraGrid.v14.2.dll" FileName="DEVEX~33.DLL|DevExpress.XtraGrid.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraGrid.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraLayout.v14.2.dll" Component_="DevExpress.XtraLayout.v14.2.dll" FileName="DEVEX~34.DLL|DevExpress.XtraLayout.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraLayout.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraScheduler.v14.2.Core.dll" Component_="DevExpress.XtraScheduler.v14.2.Core.dll" FileName="DEVEX~35.DLL|DevExpress.XtraScheduler.v14.2.Core.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraScheduler.v14.2.Core.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraRichEdit.v14.2.Extensions.dll" Component_="DevExpress.XtraRichEdit.v14.2.Extensions.dll" FileName="DEVEX~36.DLL|DevExpress.XtraRichEdit.v14.2.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraRichEdit.v14.2.Extensions.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraNavBar.v14.2.dll" Component_="DevExpress.XtraNavBar.v14.2.dll" FileName="DEVEX~37.DLL|DevExpress.XtraNavBar.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraNavBar.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraPivotGrid.v14.2.dll" Component_="DevExpress.XtraPivotGrid.v14.2.dll" FileName="DEVEX~38.DLL|DevExpress.XtraPivotGrid.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraPivotGrid.v14.2.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraReports.v14.2.dll" Component_="DevExpress.XtraReports.v14.2.dll" FileName="DEVEX~39.DLL|DevExpress.XtraReports.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraReports.v14.2.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.ConnectionInfo.dll" Component_="Microsoft.SqlServer.ConnectionInfo.dll" FileName="MICROS~3.DLL|Microsoft.SqlServer.ConnectionInfo.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.ConnectionInfo\v4.0_15.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.ConnectionInfo.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraReports.v14.2.Extensions.dll" Component_="DevExpress.XtraReports.v14.2.Extensions.dll" FileName="DEVEX~40.DLL|DevExpress.XtraReports.v14.2.Extensions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraReports.v14.2.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.Data.dll" Component_="System.Data.dll" FileName="SYSTEM~3.DLL|System.Data.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraTreeList.v14.2.dll" Component_="DevExpress.XtraTreeList.v14.2.dll" FileName="DEVEX~41.DLL|DevExpress.XtraTreeList.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraTreeList.v14.2.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Build.Framework.dll" Component_="Microsoft.Build.Framework.dll" FileName="MICROS~4.DLL|Microsoft.Build.Framework.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.Build.Framework.dll" SelfReg="false"/>
+    <ROW File="Microsoft.CSharp.dll" Component_="Microsoft.CSharp.dll" FileName="MICROS~5.DLL|Microsoft.CSharp.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll" SelfReg="false"/>
+    <ROW File="Microsoft.VisualBasic.dll" Component_="Microsoft.VisualBasic.dll" FileName="MICROS~6.DLL|Microsoft.VisualBasic.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.VisualBasic.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Office.Interop.Access.dll" Component_="Microsoft.Office.Interop.Access.dll" FileName="MICROS~7.DLL|Microsoft.Office.Interop.Access.dll" Attributes="0" SourcePath="F:\Setup File\Microsoft.Office.Interop.Access.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.Smo.dll" Component_="Microsoft.SqlServer.Smo.dll" FileName="MICROS~8.DLL|Microsoft.SqlServer.Smo.dll" Attributes="0" SourcePath="C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.Smo.dll" SelfReg="false"/>
+    <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.ManagedConnections.dll" Component_="Microsoft.SqlServer.ManagedConnections.dll" FileName="MICROS~9.DLL|Microsoft.SqlServer.ManagedConnections.dll" Attributes="0" SourcePath="C:\Program Files\Microsoft SQL Server\140\DTS\Connections\Microsoft.SqlServer.ManagedConnections.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.Management.Sdk.Sfc.dll" Component_="Microsoft.SqlServer.Management.Sdk.Sfc.dll" FileName="MICRO~10.DLL|Microsoft.SqlServer.Management.Sdk.Sfc.dll" Attributes="0" SourcePath="C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll" SelfReg="false"/>
+    <ROW File="System.Design.dll" Component_="System.Design.dll" FileName="SYSTEM~4.DLL|System.Design.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Design.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.DataAnnotations.dll" Component_="System.ComponentModel.DataAnnotations.dll" FileName="SYSTEM~5.DLL|System.ComponentModel.DataAnnotations.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.ComponentModel.DataAnnotations.dll" SelfReg="false"/>
+    <ROW File="System.Configuration.dll" Component_="System.Configuration.dll" FileName="SYSTEM~6.DLL|System.Configuration.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Configuration.dll" SelfReg="false"/>
+    <ROW File="System.Data.OracleClient.dll" Component_="System.Data.OracleClient.dll" FileName="SYSTEM~7.DLL|System.Data.OracleClient.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.OracleClient.dll" SelfReg="false"/>
+    <ROW File="System.Deployment.dll" Component_="System.Deployment.dll" FileName="SYSTEM~8.DLL|System.Deployment.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Deployment.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.Design.dll" Component_="System.Drawing.Design.dll" FileName="SYSTEM~9.DLL|System.Drawing.Design.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.Design.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.dll" Component_="System.Drawing.dll" FileName="SYSTE~10.DLL|System.Drawing.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" SelfReg="false"/>
+    <ROW File="System.Management.dll" Component_="System.Management.dll" FileName="SYSTE~11.DLL|System.Management.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Management.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Remoting.dll" Component_="System.Runtime.Remoting.dll" FileName="SYSTE~12.DLL|System.Runtime.Remoting.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Runtime.Remoting.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.dll" Component_="System.Runtime.Serialization.dll" FileName="SYSTE~13.DLL|System.Runtime.Serialization.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Runtime.Serialization.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.Web.dll" Component_="System.ServiceModel.Web.dll" FileName="SYSTE~14.DLL|System.ServiceModel.Web.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.ServiceModel.Web.dll" SelfReg="false"/>
+    <ROW File="System.Windows.Forms.dll" Component_="System.Windows.Forms.dll" FileName="SYSTE~15.DLL|System.Windows.Forms.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" SelfReg="false"/>
+    <ROW File="System.Xml.dll" Component_="System.Xml.dll" FileName="SYSTE~16.DLL|System.Xml.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" SelfReg="false"/>
+    <ROW File="WindowsBase.dll" Component_="WindowsBase.dll" FileName="WINDOW~1.DLL|WindowsBase.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\WindowsBase.dll" SelfReg="false"/>
+    <ROW File="Office.dll" Component_="Office.dll" FileName="Office.dll" Attributes="0" SourcePath="C:\WINDOWS\assembly\GAC_MSIL\Office\15.0.0.0__71e9bce111e9429c\Office.dll" SelfReg="false"/>
+    <ROW File="stdole.dll" Component_="stdole.dll" FileName="stdole.dll" Attributes="0" SourcePath="C:\WINDOWS\assembly\GAC\stdole\7.0.3300.0__b03f5f7f11d50a3a\stdole.dll" SelfReg="false"/>
+    <ROW File="Interop.ACTIVEXLib.dll" Component_="Interop.ACTIVEXLib.dll" FileName="INTERO~4.DLL|Interop.ACTIVEXLib.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.ACTIVEXLib.dll" SelfReg="false"/>
+    <ROW File="Interop.ADODB.dll" Component_="Interop.ADODB.dll" FileName="INTERO~5.DLL|Interop.ADODB.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.ADODB.dll" SelfReg="false"/>
+    <ROW File="Interop.InteropExtensionLib.dll" Component_="Interop.InteropExtensionLib.dll" FileName="INTERO~6.DLL|Interop.InteropExtensionLib.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.InteropExtensionLib.dll" SelfReg="false"/>
+    <ROW File="Interop.InteropGUILib.dll" Component_="Interop.InteropGUILib.dll" FileName="INTERO~7.DLL|Interop.InteropGUILib.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.InteropGUILib.dll" SelfReg="false"/>
+    <ROW File="Interop.IWshRuntimeLibrary.dll" Component_="Interop.IWshRuntimeLibrary.dll" FileName="INTERO~8.DLL|Interop.IWshRuntimeLibrary.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.IWshRuntimeLibrary.dll" SelfReg="false"/>
+    <ROW File="Interop.Office2013CustomActionsLib.dll" Component_="Interop.Office2013CustomActionsLib.dll" FileName="INTERO~9.DLL|Interop.Office2013CustomActionsLib.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.Office2013CustomActionsLib.dll" SelfReg="false"/>
+    <ROW File="Interop.UCAddinLib.dll" Component_="Interop.UCAddinLib.dll" FileName="INTER~10.DLL|Interop.UCAddinLib.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.UCAddinLib.dll" SelfReg="false"/>
+    <ROW File="Interop.VSTOEE100.dll" Component_="Interop.VSTOEE100.dll" FileName="INTER~11.DLL|Interop.VSTOEE100.dll" Attributes="0" SourcePath="QuanLyCongVan\obj\Debug\Interop.VSTOEE100.dll" SelfReg="false"/>
+    <ROW File="System.ServiceModel.dll" Component_="System.ServiceModel.dll" FileName="SYSTE~17.DLL|System.ServiceModel.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.ServiceModel.dll" SelfReg="false"/>
+    <ROW File="System.Data.Entity.dll" Component_="System.Data.Entity.dll" FileName="SYSTE~18.DLL|System.Data.Entity.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Entity.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraWizard.v14.2.dll" Component_="DevExpress.XtraWizard.v14.2.dll" FileName="DEVEX~42.DLL|DevExpress.XtraWizard.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraWizard.v14.2.dll" SelfReg="false"/>
+    <ROW File="System.Data.Services.Client.dll" Component_="System.Data.Services.Client.dll" FileName="SYSTE~19.DLL|System.Data.Services.Client.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Services.Client.dll" SelfReg="false"/>
+    <ROW File="PresentationCore.dll" Component_="PresentationCore.dll" FileName="PRESEN~1.DLL|PresentationCore.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationCore.dll" SelfReg="false"/>
+    <ROW File="PresentationFramework.dll" Component_="PresentationFramework.dll" FileName="PRESEN~2.DLL|PresentationFramework.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\PresentationFramework.dll" SelfReg="false"/>
+    <ROW File="System.Xml.Linq.dll" Component_="System.Xml.Linq.dll" FileName="SYSTE~20.DLL|System.Xml.Linq.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.Linq.dll" SelfReg="false"/>
+    <ROW File="System.Transactions.dll" Component_="System.Transactions.dll" FileName="SYSTE~21.DLL|System.Transactions.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Transactions.dll" SelfReg="false"/>
+    <ROW File="System.Data.Linq.dll" Component_="System.Data.Linq.dll" FileName="SYSTE~22.DLL|System.Data.Linq.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.Linq.dll" SelfReg="false"/>
+    <ROW File="DevExpress.ExpressApp.Xpo.v14.2.dll" Component_="DevExpress.ExpressApp.Xpo.v14.2.dll" FileName="DEVEX~43.DLL|DevExpress.ExpressApp.Xpo.v14.2.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.ExpressApp.Xpo.v14.2.dll" SelfReg="false"/>
+    <ROW File="System.Printing.dll" Component_="System.Printing.dll" FileName="SYSTE~23.DLL|System.Printing.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Printing.dll" SelfReg="false"/>
+    <ROW File="System.Security.dll" Component_="System.Security.dll" FileName="SYSTE~24.DLL|System.Security.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Security.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.dll" Component_="System.Numerics.dll" FileName="SYSTE~25.DLL|System.Numerics.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Numerics.dll" SelfReg="false"/>
+    <ROW File="UIAutomationClient.dll" Component_="UIAutomationClient.dll" FileName="UIAUTO~1.DLL|UIAutomationClient.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\UIAutomationClient.dll" SelfReg="false"/>
+    <ROW File="System.Web.Services.dll" Component_="System.Web.Services.dll" FileName="SYSTE~26.DLL|System.Web.Services.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Web.Services.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.Serialization.Formatters.Soap.dll" Component_="System.Runtime.Serialization.Formatters.Soap.dll" FileName="SYSTE~27.DLL|System.Runtime.Serialization.Formatters.Soap.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Runtime.Serialization.Formatters.Soap.dll" SelfReg="false"/>
+    <ROW File="DevExpress.XtraScheduler.v14.2.Reporting.dll" Component_="DevExpress.XtraScheduler.v14.2.Reporting.dll" FileName="DEVEX~44.DLL|DevExpress.XtraScheduler.v14.2.Reporting.dll" Attributes="0" SourcePath="C:\Program Files (x86)\DevExpress 14.2\Components\Bin\Framework\DevExpress.XtraScheduler.v14.2.Reporting.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.Diagnostics.STrace.dll" Component_="Microsoft.SqlServer.Diagnostics.STrace.dll" FileName="MICRO~11.DLL|Microsoft.SqlServer.Diagnostics.STrace.dll" Attributes="0" SourcePath="C:\WINDOWS\assembly\GAC_MSIL\Microsoft.SqlServer.Diagnostics.STrace\14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.Diagnostics.STrace.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.SqlClrProvider.dll" Component_="Microsoft.SqlServer.SqlClrProvider.dll" FileName="MICRO~12.DLL|Microsoft.SqlServer.SqlClrProvider.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.SqlClrProvider\v4.0_15.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.SqlClrProvider.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.ManagedDTS.dll" Component_="Microsoft.SqlServer.ManagedDTS.dll" FileName="MICRO~13.DLL|Microsoft.SqlServer.ManagedDTS.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.ManagedDTS\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.ManagedDTS.dll" SelfReg="false"/>
+    <ROW File="System.Messaging.dll" Component_="System.Messaging.dll" FileName="SYSTE~28.DLL|System.Messaging.dll" Attributes="0" SourcePath="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Messaging.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.Dmf.Common.dll" Component_="Microsoft.SqlServer.Dmf.Common.dll" FileName="MICRO~14.DLL|Microsoft.SqlServer.Dmf.Common.dll" Attributes="0" SourcePath="C:\WINDOWS\assembly\GAC_MSIL\Microsoft.SqlServer.Dmf.Common\14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.Dmf.Common.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.ServiceBrokerEnum.dll" Component_="Microsoft.SqlServer.ServiceBrokerEnum.dll" FileName="MICRO~15.DLL|Microsoft.SqlServer.ServiceBrokerEnum.dll" Attributes="0" SourcePath="C:\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.ServiceBrokerEnum.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.DTSRuntimeWrap.dll" Component_="Microsoft.SqlServer.DTSRuntimeWrap.dll" FileName="MICRO~16.DLL|Microsoft.SqlServer.DTSRuntimeWrap.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_64\Microsoft.SqlServer.DTSRuntimeWrap\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.DTSRuntimeWrap.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.Msxml6_interop.dll" Component_="Microsoft.SqlServer.Msxml6_interop.dll" FileName="MICRO~17.DLL|Microsoft.SqlServer.Msxml6_interop.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_64\Microsoft.SqlServer.Msxml6_interop\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.Msxml6_interop.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.SqlTDiagM.dll" Component_="Microsoft.SqlServer.SqlTDiagM.dll" FileName="MICRO~18.DLL|Microsoft.SqlServer.SqlTDiagM.dll" Attributes="0" SourcePath="C:\WINDOWS\assembly\GAC_MSIL\Microsoft.SqlServer.SqlTDiagM\14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.SqlTDiagM.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.PipelineHost.dll" Component_="Microsoft.SqlServer.PipelineHost.dll" FileName="MICRO~19.DLL|Microsoft.SqlServer.PipelineHost.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.PipelineHost\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.PipelineHost.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.DtsMsg.dll" Component_="Microsoft.SqlServer.DtsMsg.dll" FileName="MICRO~20.DLL|Microsoft.SqlServer.DtsMsg.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.DtsMsg\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.DtsMsg.dll" SelfReg="false"/>
+    <ROW File="Microsoft.SqlServer.DTSPipelineWrap.dll" Component_="Microsoft.SqlServer.DTSPipelineWrap.dll" FileName="MICRO~21.DLL|Microsoft.SqlServer.DTSPipelineWrap.dll" Attributes="0" SourcePath="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.SqlServer.DTSPipelineWrap\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.DTSPipelineWrap.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="AnyCPU_Debug" BuildName="AnyCPU_Debug" BuildOrder="1" BuildType="0" PackageFileName="AnyCPU_Debug" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+    <ROW BuildKey="AnyCPU_Release" BuildName="AnyCPU_Release" BuildOrder="2" BuildType="0" PackageFileName="AnyCPU_Release" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#QuanLyCongVan.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Type="1" Source="aicustact.dll" Target="GetLocalizedCredentials"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.DataAccess.v14.2.UI.dll"/>
+    <ROW Feature_="MainFeature" Component_="QuanLyCongVan.exe"/>
+    <ROW Feature_="MainFeature" Component_="QuanLyCongVan.exe.config"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.CodeParser.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Charts.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.BonusSkins.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Data.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraScheduler.v14.2.Reporting.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraCharts.v14.2.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.DataAccess.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.ExpressApp.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.DataSetExtensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraVerticalGrid.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.ExpressApp.Win.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="icsharpcode.sharpziplib.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Office.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraPrinting.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Persistent.Base.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraSpreadsheet.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.PivotGrid.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Printing.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.RichEdit.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.SqlEnum.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Sparkline.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraRichEdit.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Spreadsheet.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Xpo.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Utils.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.Utils.v14.2.UI.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.ADOX.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraBars.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraScheduler.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraCharts.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraCharts.v14.2.UI.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraCharts.v14.2.Wizard.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.NetFwTypeLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraEditors.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Office.interop.access.dao.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.VSTOEE90.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraGauges.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraGauges.v14.2.Win.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraGrid.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraLayout.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraScheduler.v14.2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraRichEdit.v14.2.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraNavBar.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraPivotGrid.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraReports.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.ConnectionInfo.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraReports.v14.2.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraTreeList.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Build.Framework.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.CSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.VisualBasic.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Office.Interop.Access.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.Smo.dll"/>
+    <ROW Feature_="MainFeature" Component_="mscorlib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.ManagedConnections.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.Management.Sdk.Sfc.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Design.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.DataAnnotations.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Configuration.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.OracleClient.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Deployment.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.Design.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Management.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Remoting.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.Web.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Windows.Forms.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.dll"/>
+    <ROW Feature_="MainFeature" Component_="WindowsBase.dll"/>
+    <ROW Feature_="MainFeature" Component_="Office.dll"/>
+    <ROW Feature_="MainFeature" Component_="stdole.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.ACTIVEXLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.ADODB.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.InteropExtensionLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.InteropGUILib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.IWshRuntimeLibrary.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.Office2013CustomActionsLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.UCAddinLib.dll"/>
+    <ROW Feature_="MainFeature" Component_="Interop.VSTOEE100.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.Entity.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraWizard.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.Services.Client.dll"/>
+    <ROW Feature_="MainFeature" Component_="PresentationCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="PresentationFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Xml.Linq.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Transactions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.Linq.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.ExpressApp.Xpo.v14.2.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Printing.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.dll"/>
+    <ROW Feature_="MainFeature" Component_="UIAutomationClient.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Web.Services.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.Serialization.Formatters.Soap.dll"/>
+    <ROW Feature_="MainFeature" Component_="DevExpress.XtraScheduler.v14.2.Reporting.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.Diagnostics.STrace.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.SqlClrProvider.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.ManagedDTS.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Messaging.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.Dmf.Common.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.ServiceBrokerEnum.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.DTSRuntimeWrap.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.Msxml6_interop.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.SqlTDiagM.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.PipelineHost.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.DtsMsg.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.SqlServer.DTSPipelineWrap.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="52"/>
+    <ROW Action="AI_DETECT_MODERNWIN" Condition="(VersionNT &gt;= 603)" Sequence="54" MsiKey="AI_DETECT_MODERNWIN"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="54"/>
+    <ROW Action="AI_DpiContentScale" Sequence="53"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="52"/>
+    <ROW Action="AI_ResolveLocalizedCredentials" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="AnyCPU_Debug;AnyCPU_Release"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLockPermComponent">
+    <ROW LockObject="APPDIR" Table="CreateFolder" User="[GRP_EVERYONE]" Permission="2032127" Flags="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="QuanLyCongVan.exe" Directory_="SHORTCUTDIR" Name="QUANLY~1.EXE|QuanLyCongVan.exe" Component_="QuanLyCongVan.exe" Target="[#QuanLyCongVan.exe]" Description="QuanLyCongVan.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="QuanLyCongVan.exe_1" Directory_="DesktopFolder" Name="QUANLY~1.EXE|QuanLyCongVan.exe" Component_="QuanLyCongVan.exe" Target="[#QuanLyCongVan.exe]" Description="QuanLyCongVan.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="QuanLyCongVan.exe_2" Directory_="SHORTCUTDIR" Name="QUANLY~2.EXE|QuanLyCongVan.exe" Component_="QuanLyCongVan.exe" Target="[#QuanLyCongVan.exe]" Description="QuanLyCongVan.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="QuanLyCongVan.exe_3" Directory_="DesktopFolder" Name="QUANLY~2.EXE|QuanLyCongVan.exe" Component_="QuanLyCongVan.exe" Target="[#QuanLyCongVan.exe]" Description="QuanLyCongVan.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
